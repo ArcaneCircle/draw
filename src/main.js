@@ -1,10 +1,10 @@
-import "./main.css"
+import "./main.css";
 
 DrawingBoard.Control.Menu = DrawingBoard.Control.extend({
   name: "menu",
   initialize: function () {
     this.$el.append(
-      '<button id="menu-btn"></button><div id="dropdown-content"><a href="#" id="import-menuitem">Open...</a><a href="#" id="share-menuitem">Share</a></div>'
+      '<button id="menu-btn"></button><div id="dropdown-content"><a href="#" id="import-menuitem">Open...</a><a href="#" id="share-menuitem">Share</a></div>',
     );
 
     this.$el.on("click", "#menu-btn", function (e) {
@@ -37,7 +37,7 @@ DrawingBoard.Control.Menu = DrawingBoard.Control.extend({
           reader.readAsDataURL(files[0]);
         });
         e.preventDefault();
-      }, this)
+      }, this),
     );
 
     this.$el.on(
@@ -49,7 +49,7 @@ DrawingBoard.Control.Menu = DrawingBoard.Control.extend({
           file: { name: "draw.png", base64: b64Data },
         });
         e.preventDefault();
-      }, this)
+      }, this),
     );
   },
 });
