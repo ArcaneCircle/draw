@@ -1,3 +1,5 @@
+import "./main.css"
+
 DrawingBoard.Control.Menu = DrawingBoard.Control.extend({
   name: "menu",
   initialize: function () {

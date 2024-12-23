@@ -1,26 +1,23 @@
-# Draw [![CI](https://github.com/webxdc/draw.xdc/actions/workflows/ci.yml/badge.svg)](https://github.com/webxdc/draw.xdc/actions/workflows/ci.yml) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+# Draw [![CI](https://github.com/ArcaneCircle/draw.xdc/actions/workflows/ci.yml/badge.svg)](https://github.com/ArcaneCircle/draw.xdc/actions/workflows/ci.yml) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 A WebXDC app that allows to share draws.
 
-<img width="200" alt="draw" src="https://github.com/webxdc/draw.xdc/raw/main/assets/capture-1.jpg"> <img width="200" alt="draw" src="https://github.com/webxdc/draw.xdc/raw/main/assets/capture-2.jpg">
+<img width="200" alt="draw" src="https://github.com/ArcaneCircle/draw.xdc/raw/main/assets/capture-1.jpg"> <img width="200" alt="draw" src="https://github.com/ArcaneCircle/draw.xdc/raw/main/assets/capture-2.jpg">
 
-[Download the latest version](https://github.com/webxdc/draw.xdc/releases/latest/download/draw.xdc), attach to a Delta Chat (or other [WebXDC-capable](https://webxdc.org) client) group and share your drawings!
-
-## Developing
+## Contributing
 
 ### Installing Dependencies
 
-After cloning this repo for the first time, install dependecies:
+After cloning this repo, install dependencies:
 
 ```
 pnpm i
 ```
 
-### Running tests
+### Checking code format
 
 ```
-pnpm format:check
-pnpm test
+pnpm check
 ```
 
 ### Testing the app in the browser
@@ -28,9 +25,7 @@ pnpm test
 To test your work in your browser (with hot reloading!) while developing:
 
 ```
-pnpm dev-mini
-# Alternatively to test in a more advanced WebXDC emulator:
-pnpm dev
+pnpm start
 ```
 
 ### Building
